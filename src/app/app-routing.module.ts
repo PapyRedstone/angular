@@ -1,10 +1,27 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 
-const routes: Routes = [];
+import { HomeComponent } from './home/home.component';
+import { FormComponent } from './form/form.component';
+import { RecupComponent } from './recup/recup.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+
+
+const appRoutes: Routes = [
+    {path:'', component: HomeComponent},
+    {path:'recup/:nb', component: RecupComponent},
+    {path:'form', component: FormComponent},
+    {path:'**', component: NotfoundComponent}
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [
+	RouterModule.forRoot(appRoutes)
+    ],
+    exports: [
+	RouterModule
+    ],
+    providers: []
 })
 export class AppRoutingModule { }
