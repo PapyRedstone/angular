@@ -5,3 +5,8 @@ h1 {
 h2 {
     color: red;
 }
+
+li {
+    display: inline;
+    margin-left: 5px;
+}

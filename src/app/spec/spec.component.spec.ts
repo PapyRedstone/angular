@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ColLeftComponent } from './col-left.component';
+import { SpecComponent } from './spec.component';
 
-describe('ColLeftComponent', () => {
-  let component: ColLeftComponent;
-  let fixture: ComponentFixture<ColLeftComponent>;
+describe('SpecComponent', () => {
+  let component: SpecComponent;
+  let fixture: ComponentFixture<SpecComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ColLeftComponent ]
+      declarations: [ SpecComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ColLeftComponent);
+    fixture = TestBed.createComponent(SpecComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
